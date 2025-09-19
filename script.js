@@ -20,7 +20,7 @@ function setPrompt(text) {
 
 // Tải các lệnh sẵn có từ GitHub raw (giả sử là file JSON chứa các lệnh)
 // Thay bằng URL raw của kho GitHub của bạn
-const githubRawUrl = 'https://raw.githubusercontent.com/yourusername/yourrepo/main/presets.json';
+const githubRawUrl = 'https://raw.githubusercontent.com/quaypro001/Comic-Trans-AI/DataBase/presets.json';
 fetch(githubRawUrl)
     .then(response => response.json())
     .then(data => {
