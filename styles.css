@@ -17,7 +17,7 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
 }
-input[type="text"], select, textarea, input[type="file"] {
+input[type="text"], input[type="password"], select, textarea, input[type="file"] {
     width: 100%;
     padding: 8px;
     border: 1px solid #ddd;
