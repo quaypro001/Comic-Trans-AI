@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Trans AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Comic Trans AI</h1>
+
+    <div class="form-group" id="api-key-group">
+        <label for="api-key">Khóa API Gemini:</label>
+        <input type="text" id="api-key" placeholder="Nhập khóa API Gemini của bạn">
+        <button id="save-key">Lưu</button>
+    </div>
+
+    <div class="form-group">
+        <label for="source-lang">Ngôn ngữ nguồn:</label>
+        <select id="source-lang">
+            <option value="English">Tiếng Anh</option>
+            <option value="Japanese">Tiếng Nhật</option>
+            <option value="Chinese">Tiếng Trung</option>
+            <option value="Korean">Tiếng Hàn</option>
+            <option value="French">Tiếng Pháp</option>
+            <option value="Spanish">Tiếng Tây Ban Nha</option>
+            <!-- Thêm các ngôn ngữ khác nếu cần -->
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="prompt">Lệnh (sử dụng [source] cho ngôn ngữ nguồn và [content] cho nội dung file):</label>
+        <textarea id="prompt" placeholder="Nhập lệnh tùy chỉnh hoặc chọn lệnh có sẵn"></textarea>
+        <div id="preset-buttons">
+            <button onclick="setPrompt('Dịch đoạn truyện tranh sau từ [source] sang tiếng Việt: [content]')">Lệnh sẵn có: Dịch sang tiếng Việt</button>
+            <button onclick="setPrompt('Nhập lệnh tùy chỉnh tại đây')">Tùy chỉnh</button>
+            <!-- Các lệnh sẵn có từ GitHub raw sẽ được thêm động -->
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="file-input">Chọn file (TXT, hoặc xuất Word/Google Docs sang TXT):</label>
+        <input type="file" id="file-input" accept=".txt">
+        <p>Lưu ý: Đối với file Word (.doc/.docx) hoặc Google Docs, vui lòng xuất sang định dạng .txt trước. Phiên bản này chưa hỗ trợ phân tích định dạng nâng cao.</p>
+    </div>
+
+    <button id="translate">Dịch sang tiếng Việt</button>
+
+    <div class="form-group">
+        <label for="result">Kết quả (tiếng Việt):</label>
+        <textarea id="result" readonly></textarea>
+    </div>
+
+    <button id="download-txt">Tải xuống dưới dạng TXT</button>
+    <button id="download-doc">Tải xuống dưới dạng DOC (Văn bản cơ bản)</button>
+    <!-- Lưu ý: Tải xuống DOC là văn bản cơ bản; để có định dạng Word đầy đủ, sử dụng công cụ bên ngoài -->
+
+    <script src="script.js"></script>
+</body>
+</html>
