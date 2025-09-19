@@ -20,7 +20,7 @@ function setPrompt(text) {
 
 // Tải các lệnh sẵn có từ GitHub raw (giả sử là file JSON chứa các lệnh)
 // Thay bằng URL raw của kho GitHub của bạn
-const githubRawUrl = 'https://raw.githubusercontent.com/quaypro001/Comic-Trans-AI/DataBase/presets.json';
+const githubRawUrl = 'https://raw.githubusercontent.com/yourusername/yourrepo/main/presets.json';
 fetch(githubRawUrl)
     .then(response => response.json())
     .then(data => {
@@ -121,5 +121,5 @@ document.getElementById('download-doc').addEventListener('click', () => {
     a.download = 'dich.doc';
     a.click();
     URL.revokeObjectURL(url);
-// Lưu ý: Đây là văn bản thuần túy trong .doc; để có định dạng Word đầy đủ, sử dụng thư viện như docx.js
+    // Lưu ý: Đây là văn bản thuần túy trong .doc; để có định dạng Word đầy đủ, sử dụng thư viện như docx.js
 });
