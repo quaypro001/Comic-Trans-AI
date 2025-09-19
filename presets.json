@@ -1,8 +1,8 @@
 {
   "presets": [
     {
-      "name": "Dịch đơn giản sang tiếng Việt",
-      "text": "Dịch đoạn văn bản sau từ [source] sang tiếng Việt: hãy nhập vai 1 bậc thầy dịch truyện tranh tất cả ngôn ngữ sang tiếng việt sao cho đọc mượt, đúng chính tả, lợi dụng hán việt nhưng hạn chế chút.
+      "name": "Bậc thầy dịch truyện tranh",
+      "text": "Dịch đoạn văn bản sau từ [source] sang tiếng Việt: hãy nhập vai 1 bậc thầy dịch truyện tranh tất cả ngôn ngữ sang tiếng việt sao cho đọc mượt, đúng chính tả, lợi dụng hán việt nhưng hạn chế chút."
     }
   ]
 }
